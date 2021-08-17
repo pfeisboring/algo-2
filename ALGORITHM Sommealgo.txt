@@ -1,0 +1,44 @@
+ALGORITHM Somme
+VAR
+    array1 : ARRAY_OF INTEGER[100];
+    array2 : ARRAY_OF INTEGER[100];
+    s,i,j,k : INTEGER :=0;
+    compare1 : INTEGER := array1[i];
+    compare2 : INTEGER := array2[j];
+    elements : INTEGER;
+
+BEGIN
+
+FUNCTION exist (compare3 , array3[k]) : BOOLEAN
+VAR
+    
+BEGIN
+FOR k FROM 0 TO array3.length STEP 1  DO
+IF (compare === array3[k]) THEN
+    return true;
+    ELSE
+    return false;
+END_IF
+END_FOR
+END
+
+
+FOR i FROM 0 TO array1.length STEP 1  DO
+    FOR j FROM 0 TO array2.length STEP 1 DO
+
+IF (exist(compare1, array2[j]) == false) THEN
+    s = s + compare1;
+    elements = elements.concat(elements,compare1);
+    END_IF
+
+IF (exist(compare2, array1[i])) THEN
+    s= s + compare2;
+    elements = elements.concat(elements,compare2);
+END_IF
+END_FOR
+END_FOR
+
+Write(s);
+Write(elements);
+
+END
